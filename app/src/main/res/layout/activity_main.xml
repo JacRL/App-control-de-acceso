@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnScanner"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:background="@drawable/desing_button"
+        android:text="Escanear"
+        android:onClick="ingresarncon"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btncontrol"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <Button
+        android:id="@+id/btncontrol"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:background="@drawable/desing_button"
+        android:onClick="ingresarncon"
+        android:text="Ingresar numero"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnScanner"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="@drawable/desing_icono_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/viewlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginVertical="35dp"
+            android:background="@drawable/logoooo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="110dp"
+            android:layout_marginTop="180dp"
+            android:text="Control de acceso"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:layout_marginHorizontal="270dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/desing_button"
+            android:onClick="mostar"
+            android:text="Mostrar lista"
+            android:textSize="12.5sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="240dp"
+        android:layout_height="170dp"
+        android:background="@drawable/desing_image_target"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+        app:layout_constraintVertical_bias="0.698">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Escanee la credencial"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@mipmap/tarjeta" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

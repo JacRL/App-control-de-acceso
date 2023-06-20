@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingresar"
+    android:background="@drawable/bg_1">
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="@drawable/desing_text2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/viewlogo"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginVertical="10dp"
+            app:srcCompat="@drawable/logoooo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="59dp"
+            android:layout_marginTop="160dp"
+            android:text="Ingrese el numero de control"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/editControl"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Ejem.19590303"
+        android:inputType="number"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="#AEC9E0"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:background="@drawable/desing_numtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:background="@drawable/desin_botones"
+        android:text="Registrar"
+        android:onClick="insertar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editControl"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:background="@drawable/desin_botones"
+        android:onClick="regresar"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editControl"
+        app:layout_constraintVertical_bias="0.136" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
